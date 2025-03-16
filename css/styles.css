@@ -197,7 +197,7 @@ button {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2,1);
+   visibility 250ms cubic-bezier(0.4, 0, 0.2,1);
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -308,8 +308,8 @@ mobile-button:hover,
       rgba(46, 47, 66, 0.7)
     ),
     image-set(
-      url(/images/adaptyve/Mob-main-image\ .jpg) 1x,
-      url(/images/adaptyve/Mob-main-image@2x.jpg) 2x );
+      url(./images/adaptyve/Mob-main-image\ .jpg) 1x,
+      url(./images/adaptyve/Mob-main-image@2x.jpg) 2x );
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -353,8 +353,8 @@ mobile-button:hover,
       rgba(46, 47, 66, 0.7)
     ),
     image-set(
-      url(/images/adaptyve/Tablet-main.jpg) 1x,
-      url(/images/adaptyve/Tablet-main@2x.jpg) 2x )
+      url(./images/adaptyve/Tablet-main.jpg) 1x,
+      url(./images/adaptyve/Tablet-main@2x.jpg) 2x )
     }
    .hero-section-header {
       font-size: 56px;
@@ -372,8 +372,8 @@ mobile-button:hover,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
     image-set(
-    url(/images/adaptyve/people-office\ 1.jpg) 1x,
-    url(/images/adaptyve/people-office-deckstop@x2.jpg) 2x );
+    url(./images/adaptyve/people-office\ 1.jpg) 1x,
+    url(./images/adaptyve/people-office-deckstop@x2.jpg) 2x );
   
     }
     .hero-section-header {
