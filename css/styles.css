@@ -308,7 +308,7 @@ mobile-button:hover,
       rgba(46, 47, 66, 0.7)
     ),
     image-set(
-      url(./images/adaptyve/Mob-main-image\ .jpg) 1x,
+      url(./images/adaptyve/Mob-main-image.jpg) 1x,
       url(./images/adaptyve/Mob-main-image@2x.jpg) 2x );
     background-repeat: no-repeat;
     background-position: center;
