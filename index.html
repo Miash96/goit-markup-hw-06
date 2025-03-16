@@ -54,10 +54,86 @@
           </ul>
         </address>
         <button class="mob-burger-btn"type="button"><svg class="mob-burger-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          <use href="/images/icons.svg#icon-heroicons-solid_menu"></use>
         </svg></button>
       </div>
-    </header>
+
+      <!-- mobile window-->
+      <div class="mobile-menu.is-open" data-mobile-open>
+        <div class="container mobile-menu-container">
+          <button class="mobile-button" type="button" data-mobile-close>
+            <svg class="icon-close-mobile" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-checked-btn"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobaile-nav-item">
+                <a href="" class="mobile-nav-link mobile-nav-link-studio"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobaile-nav-item">
+                <a href="" class="mobile-nav-link">Portfolio</a>
+              </li>
+              <li class="mobaile-nav-item">
+                <a href="" class="mobile-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mob-adr-list">
+              <li class="mob-adr-item">
+                <a
+                  class="mob-adr-link mob-adr-link-tel"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-adr-item">
+                <a class="mob-adr-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="mob-social-list">
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="./js/modal-open.js"></script>
+    </header>       
+    
 
     <main>
       <!--Section 1-->
@@ -560,8 +636,9 @@
       </section>
     </main>
 
-    <!-- <footer class="section-footer">
-      <div class="container">
+<!-- Footer-->
+    <footer class="section-footer">
+      <div class="container footer-container">
         <div class="paragraph">
         <a class="logo-footer" href="./index.html"
           >Web<span class="logo-text-footer">Studio</span></a
@@ -610,7 +687,7 @@
       </p>
       <form class="order-form">
               <label class="order-form-label">    
-                  <input class="order-form-input" type="email" name="email" placeholder="E-mail" required/>
+                  <input class="order-form-input" form="footer-email" type="email" name="email" placeholder="E-mail" required/>
               </label>
           <button class="order-form-button" type="submit">
               Subscribe
@@ -621,12 +698,12 @@
           </button>
       </form>
   </div>
-      </div>
+ </div>
     </footer> -->
 
 <!--backdrop modal-->
 
-   <!-- <div class="backdrop" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
         <svg class="close-btn-icon" width="8" height="8">
@@ -697,6 +774,6 @@
         </form>
       </div>
     </div>
-   <script src="./js/modal.js"></script> -->
+   <script src="./js/modal.js"></script> 
  </body>
 </html>
