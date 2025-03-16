@@ -186,15 +186,18 @@ button {
 }
  /*mobile menu */
 
- /*Section 1 */
+ /*Section 1 Main */
  .section-hero {
   padding: 72px 0px;
-  background-image: linear-gradient(to bottom,
-  image-set(
-    url(/images/Mob-main-image\ .jpg) 1x,
-    url(/images/Mob-main-image@2x.jpg) 2x ));
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    image-set(
+      url(/images/adaptyve/Mob-main-image\ .jpg) 1x,
+      url(/images/adaptyve/Mob-main-image@2x.jpg) 2x );
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     max-width: 100%;
     margin: 0 auto;
@@ -228,3 +231,83 @@ button {
   .button:focus{
   background-color: #404BBF;
   }
+  @media screen and (min-width: 768px){
+    .section-hero {
+    padding: 112px 0px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    image-set(
+      url(/images/adaptyve/Tablet-main.jpg) 1x,
+      url(/images/adaptyve/Tablet-main@2x.jpg) 2x )
+    }
+   .hero-section-header {
+      font-size: 56px;
+      line-height: 1.07;
+      color: #fff;
+      max-width: 496px;
+      margin: 0 auto 36px;
+   }
+  }
+
+  @media screen and (min-width: 1158px){
+    .section-hero {
+    padding: 188px 0px;
+    background-image:linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+    image-set(
+    url(/images/adaptyve/people-office\ 1.jpg) 1x,
+    url(/images/adaptyve/people-office-deckstop@x2.jpg) 2x );
+  
+    }
+    .hero-section-header {
+      margin: 0 auto 36px;
+        }   
+  }
+  /*Section 2 * Advantages */
+.advantages-section {
+  padding: 96px 0;
+}
+.advantages-list-main {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.icon-advant-block{
+  display: none;
+  }
+.advantages-list-item{ 
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align:left;
+  margin-bottom: 8px;
+   
+  }
+.advanrages-list-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  }
+
+  @media screen and (min-width: 768px){
+    .advantages-list-main{  
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;   
+    }
+  
+    .advantages-list{
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-basis: calc( ( 100% - 24px ) / 2);
+    }
+    }
