@@ -33,7 +33,7 @@
 						<div class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="" class="menu__link">Studio</a>
+									<a href="" class="menu__link active">Studio</a>
 								</li>
 								<li class="menu__item">
 									<a href="" class="menu__link">Portfolio</a>
@@ -43,7 +43,39 @@
 								</li>
 
 							</ul>
+
+							<div class="header-contact mob">
+								<div class="header-contact__email">
+									<a href="mailto:info@devstudio.com">
+										info@devstudio.com
+									</a>
+								</div>
+								<div class="header-contact__phone">
+									<a href="tel:+110001111111">
+										+11 (000) 111-11-11
+									</a>
+								</div>
+							</div>
+
+							<div class="our-team-box__social mob">
+								<a href="" class="our-team-box__social-img">
+									<img src="img/inst.svg" alt="instagram">
+								</a>
+								<a href="" class="our-team-box__social-img">
+									<img src="img/twt.svg" alt="twiter">
+								</a>
+								<a href="" class="our-team-box__social-img">
+									<img src="img/fb.svg" alt="facebook">
+								</a>
+								<a href="" class="our-team-box__social-img">
+									<img src="img/lk.svg" alt="linkendin">
+								</a>
+							</div>
+
+
 						</div>
+
+
 					</nav>
 				</div>
 				<div class="header-flex__right">
@@ -78,10 +110,86 @@
 					<h1 class="hero-title">
 						Effective Solutions for Your Business
 					</h1>
-					<button type="button" class="hero-btn">Order Service</button>
+					<button type="button" class="hero-btn" data-modal-open>Order Service</button>
 				</div>
 			</div>
 		</section>
+
+		<!--backdrop modal-->
+
+		<div class="backdrop" data-modal>
+			<div class="modal">
+				<button class="modal-close-btn" type="button" data-modal-close>
+					<svg class="close-btn-icon" width="8" height="8">
+						<use href="./images/icons.svg#icon-close-checked-btn"></use>
+					</svg>
+				</button>
+				<p class="contact-description">Leave your contacts and we will call you back</p>
+
+				<form class="form-info">
+					<div class="input-group">
+						<label class="contact-label" for="user-name">Name
+						</label>
+						<div class="input-icon">
+							<input class="input-modal-icons" type="text" id="user-name" name="user-name">
+							<svg class="icon-svg" width="18" height="24">
+								<use href="img/input-1-black.svg"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="input-group">
+						<label class="contact-label" for="user-phone">Phone
+						</label>
+						<div class="input-icon">
+							<input class="input-modal-icons" type="tel" id="user-phone" name="user-phone"
+								placeholder="ХХ-ХХХ-ХХХ-ХХ-ХХ">
+							<svg class="icon-svg" width="18" height="24">
+								<use href="./images/icons.svg#icon-tel"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="input-group">
+						<label class="contact-label" for="user-mail">Email
+						</label>
+						<div class="input-icon">
+							<input class="input-modal-icons" type="email" id="user-mail" name="user-email">
+							<svg class="icon-svg" width="18" height="24">
+								<use href="./images/icons.svg#icon-email"></use>
+							</svg>
+						</div>
+					</div>
+
+					<div class="input-group-comment">
+						<label class="contact-label" for="user-comment">Comment
+						</label>
+						<textarea class="textarea-input" name="user-comment" id="user-comment"
+							placeholder="Text input"></textarea>
+					</div>
+
+					<div class="modal-form-checkbox">
+						<input class="input-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
+							value="true" />
+						<label class="label-checkbox" for="user-privacy">
+							<span class="label-checkbox-span">
+								<svg class="svg-checkbox" width="10" height="8">
+									<use href="./images/icons.svg#icon-Checkbox-agree">
+									</use>
+								</svg>
+							</span>
+							I accept the terms and conditions of the
+							<a href="" class="label-checkbox-a">
+								Privacy Policy
+							</a>
+						</label>
+					</div>
+					<button class="btn-send" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+
+
 
 		<!-- Advantages Section -->
 		<section id="advantages">
@@ -406,6 +514,7 @@
 
 	</footer>
 	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
 </body>
 
 </html>
